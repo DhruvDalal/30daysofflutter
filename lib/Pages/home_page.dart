@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/widgets/drawer.dart';
 
 // ignore: must_be_immutable
 class HomePage extends StatelessWidget {
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Catalog App"),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
       body: Container(
         child: Center(child: Text("Welcome to $days Days of Flutter, $name")),
       ),
